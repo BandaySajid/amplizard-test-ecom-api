@@ -127,7 +127,7 @@ server.post("/chat/:botId", async (req, res) => {
   }
 });
 
-server.get("/currentUser", function (req, res) {
+server.get("/user", function (req, res) {
   const user = getUser(1);
   if (!user) {
     return res
